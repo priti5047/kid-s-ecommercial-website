@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid's Zone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo1.jpg" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shope.html">Shop</a></li>
+                <li><a href="gallary.html">gallary</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="bi bi-person"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="login-form">
+            <h1>login now</h1>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a> </p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+
+    </section>
+
+    <section id="hero">
+        <h1>Trade in offer</h1>
+        <h2>Super value deals</h2>
+        <h3>On all products</h3>
+        <p>Save more with coupons & upto 70% off !!</p>
+        <button>Shop Now</button>
+
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="free shopping.jpg" alt="">
+            <h4>Free shipping</h4>
+        </div>
+
+        <div class="fe-box">
+            <img src="online order.png" alt="">
+            <h5>Online order</h5>
+        </div>
+
+        <div class="fe-box">
+            <img src="save money.png" alt="">
+            <h6>Save money</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="promotion.avif" alt="">
+            <h7>Promotion</h7>
+        </div>
+
+        <div class="fe-box">
+            <img src="happy sell.png" alt="">
+            <h8>Happy sell</h8>
+        </div>
+
+        <div class="fe-box">
+            <img src="support.png" alt="">
+            <h9>F24/7 support</h9>
+        </div>
+
+    </section>
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+        <h1 class="text-center">PRODUCT</h1>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic1.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Maxi dress</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$100.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic2.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Baby Girls Midi</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$150.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic3.webp" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Shirt3</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>RS:500.10 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic4.avif" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Shirt4</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$300.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic5.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Pant1</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$100.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic6.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">pant2</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$50.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic7.avif" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Pant3</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$500.10 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic8.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Boys Casual T-shirt Shorts</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>RS:300.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic9.webp" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Hoodies</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$150.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic11.webp" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Hoodies</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$200.30 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic12.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Hoodies</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$500.10 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="pic13.webp" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Hoodies</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$100.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="container">
+        <section class="banner" id="banner">
+
+            <div class="banner-content">
+                <h1>Special <span>Collection</span></h1>
+
+                <h5>UPTO 50% OFF</h5>
+                <a href="#" class="btn">Add Cart</a>
+
+            </div>
+            <div class="img">
+                <img src="banner-img.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <!-- banner -->
+
+    <!-- other product -->
+    <div class="container" id="product-cards">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes 1.avif" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Sport Shoes</h3>
+
+                        <h5>RS:2000.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes 2.jpg" alt="">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center">Nike Shoes</h3>
+                        >
+                        <h5>RS:300.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes3.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Nike shoes</h3>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                        alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img
+                                        src="heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                        src="add carts.png" alt="" width="30px"></i></button>
+                        </div>
+                        <h5>RS:500.10 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes4.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Sport Shoes</h3>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                        alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img
+                                        src="heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                        src="add carts.png" alt="" width="30px"></i></button>
+                        </div>
+                        <h5>RS:1000.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes5.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Adidas Shoes</h3>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                        alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img
+                                        src="heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                        src="add carts.png" alt="" width="30px"></i></button>
+                        </div>
+                        <h5>RS:300.30 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes6.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Adidas Shoes</h3>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                        alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img
+                                        src="heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                        src="add carts.png" alt="" width="30px"></i></button>
+                        </div>
+                        <h5>RS:500.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes7.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Adidas shoes</h3>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                        alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img
+                                        src="heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                        src="add carts.png" alt="" width="30px"></i></button>
+                        </div>
+                        <h5>RS:600.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="shoes8.avif" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Adidas Shoes</h3>
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                        alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img
+                                        src="heart.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                        src="add carts.png" alt="" width="30px"></i></button>
+                        </div>
+                        <h5>RS:1000.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- other product -->
+
+    <!-- banner2 -->
+    <div class="container">
+        <section class="banner2" id="banner2">
+
+            <div class="banner2-content">
+                <h1>TOYS <span>Doll's</span></h1>
+                <h2>Product <span class="bannerchangecontent"></span></h2>
+                <h3>UPTO 50% OFF</h3>
+                <a href="#" class="btn">Add Cart</a>
+
+            </div>
+            <div class="img">
+                <img src="toy1.jpg" alt="">
+            </div>
+        </section>
+    </div>
+    <!-- banner2 -->
+
+    <!-- electronics gadgets cards -->
+    <div class="container" id="product-cards">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="w1.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Smart Watch</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$2000.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="w2.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Smart Watch</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$1000.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="w3.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Smart Watch</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$600.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="smart watch.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Smart Watch</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$1000.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="iphone 13 pro.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">I phone 13 pro</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$3000.20 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="a1.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Samsung Airpod</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$500.10 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="laptop1.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Best hp Laptop</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$2000.10 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img src="views.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="heart.png"
+                                    alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="add carts.png"
+                                    alt="" width="30px"></i></button>
+                    </div>
+                    <img src="headphone2.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Gaming Headp</h3>
+                        <div class="star text-center">
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                            <i class='bx bxs-star checked'></i>
+                        </div>
+                        <h5>$100.50 <span><i><img src="add.png" alt="" width="20px"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- electronics gadgets cards -->
+
+
+        <!-- about us -->
+        <div class="container" id="about">
+            <h2>ABOUT US</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab fuga id sed voluptas, sunt tempora iure
+                provident hic ad natus? Doloremque fugiat maiores ipsam vero nemo aut! A cum impedit provident magnam
+                corporis iste repudiandae rem laboriosam veritatis incidunt, sequi voluptates facere maxime ipsa, nulla
+                enim
+                assumenda reprehenderit itaque. Est velit natus, tenetur nisi excepturi molestiae veniam iure odio
+                aliquam
+                exercitationem ab dicta a accusamus vero delectus nostrum ex maiores voluptatum facilis? At quis
+                possimus
+                expedita porro atque sed voluptatibus deleniti et repellat eum. Ut natus, architecto tempora sit, qui
+                facilis ipsam quis quasi veritatis aliquid, odit aliquam optio dolorem.</p>
+
+        </div>
+        <hr>
+        <!-- about us -->
+        <!-- contact  -->
+        <div class="container" id="contact" data-aos="fade-up" data-aos-duration="1500">
+            <h1>CONTACT US</h1>
+            <div class="row">
+                <div class="col-md-4 py-1 py-md-0">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-md-4 py-1 py-md-0">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="eml" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col-md-4 py-1 py-md-0">
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="phn" placeholder="Phone">
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            </div>
+            <div id="messagebtn"><button>Send Message</button></div>
+        </div>
+        <!-- contact end -->
+
+
+
+        <!-- footer -->
+        <footer id="footer" style="margin-top: 50px;">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <a href="#"><img src="logo.png" alt="" width="32px">Online Shop</a>
+                            <p>
+                                Karachi <br>
+                                Sindh <br>
+                                Pakistan <br><br>
+                                <strong>Phone:</strong> +00000000000000 <br>
+                                <strong>Email:</strong> info@Online-Shop.com <br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Services</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, veritatis.</p>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Pants</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Phone</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Laptop</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Dslr Camera</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Tablets</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Social Network</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, veritatis.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="container py-4">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Online Shop</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="#">SA coding</a>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <script src="script.js"></script>
+</body>
+
+</html>

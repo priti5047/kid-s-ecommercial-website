@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+    width: 100%;
+}
+
+#header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 10px 60px;
+       background-color: rgb(12, 3, 61);
+       box-shadow: 0 5px 15px rgb(0,0, 0,0.6);
+       z-index: 999;
+       position: sticky;
+       top: 0;
+       left: 0;
+}
+
+#header img{
+    height: 10vh;
+    margin: 5px;
+
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+ 
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(51, 146, 181);
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+        content:"" ;
+        width: 30%;
+        height: 2px;
+        background-color: aqua;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+}
+#navbar li .fa-light{
+       height: 5vh;
+}
+
+.icons{
+    margin-left: 30px;
+}
+.icons img{
+    margin-left: 10px;
+    height: 2vh;
+ 
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: translateY(-5px);
+}
+
+#hero {
+    background-image: url("kid pic.jpg");
+    height: 87vh;
+    width: 100%;
+    background-size: cover;
+    padding:  0  70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+#hero h1{
+    font-size: 25px;
+    color: black;
+}
+#hero h2{
+    font-size: 36px;
+    color: black;
+}
+#hero h3{
+    font-size:45px ;
+    color: green;
+}
+#hero p{
+    font-size: 36px;
+    color:brown;
+
+}
+.section-p1{
+    padding: 40px 50px;
+}
+
+#hero button{
+ background-color: #654444;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#hero button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 10px 15px;
+    box-shadow: 20px 20px 30px rgb(0,0, 0,0.6) ;
+    border: 1px solid rgb(150, 145, 145);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgb(70,62, 221,0.1);
+}
+
+
+
+#feature img{
+    height: 20vh;
+    width: 100%;
+}
+#feature .fe-box h4{
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: brown;
+
+}
+#feature .fe-box h5{
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: brown;
+
+}
+
+
+#feature .fe-box h6{
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: brown;
+
+}
+
+#feature .fe-box h7{
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color:brown;
+
+}
+
+#feature .fe-box h8{
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: brown;
+}
+#feature .fe-box h9{
+    font-size: 15px;
+    display: inline-block;
+    padding: 8px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color:brown;
+
+}
+
+#product-cards h1{
+    margin-top: 50px;
+    font-weight: bold;
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+}
+#product-cards .card{
+    background-color: #a9a9a929;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img{
+    cursor: pointer;
+    background-color: #f0cf15;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-right: 100px;
+    margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+
+}
+#product-cards .card h3{
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+}
+.checked{
+    color: #f0cf15;
+}
+#product-cards h5{
+    font-size: 15px;
+}
+#product-cards h5 span{
+    float: right;
+}
+/* product cards */
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 35vh;
+    background-image: url(banner-img.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.banner .img{
+    flex: 1 1 400px;
+}
+.banner .img img{
+    width: 70%;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+.banner .banner-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+}
+.banner-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px rgb(20, 19, 19);
+    color: #e4e5e9;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner-content h5{
+    margin-left: 30px;
+    color: #e4e5e9;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner-content .btn{
+    margin-top: 20px;
+    align-items: center;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #faf9f1;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+@media screen and (max-width:990px){
+    .banner{
+        height: 100vh;
+    }
+    .banner .img img{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:450px){
+    .banner .img img{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .banner .banner-content h1{
+        font-size: 30px;
+    }
+    .banner .banner-content h1 span{
+        font-size: 30px;
+    }
+}
+/* banner */
+
+
+#product-cards h1{
+    margin-top: 50px;
+    font-weight: bold;
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+}
+#product-cards .card{
+    background-color: #a9a9a929;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img{
+    cursor: pointer;
+    background-color: #f0cf15;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-right: 100px;
+    margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+
+}
+#product-cards .card h3{
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+}
+.checked{
+    color: #f0cf15;
+}
+#product-cards h5{
+    font-size: 15px;
+}
+#product-cards h5 span{
+    float: right;
+}
+/* product cards */
+
+/* banner2 */
+.banner2{
+    width: 100%;
+    height: 45vh;
+    background-image: url(banner-img.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.banner2 .img{
+    flex: 1 1 400px;
+}
+.banner2 .img img{
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.banner2 .banner2-content{
+    flex:1 1 400px;
+    margin-bottom: 30px;
+}
+.banner2-content h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content h1 span{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #f0cf15;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content h2{
+    font-size: 50px;
+    color: black;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.bannerchangecontent:after{
+    content: ' ';
+    font-size: 50px;
+    color: #f0cf15;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    animation: bannercontent 10s infinite linear;
+}
+@keyframes bannercontent{
+    0%{content: "Smart Watch";}
+    20%{content: "Laptop";}
+    40%{content: "Headphone";}
+    80%{content: "Airpods";}
+    100%{content: "Smart Phone";}
+}
+.banner2-content p{
+    margin-left: 30px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content h3{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.banner2-content .btn{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    height: 38px;
+    letter-spacing: 3px;
+    background-color: #f0cf15;
+    color: black;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+@media screen and (max-width:990px){
+    .banner2{
+        height: 100vh;
+    }
+    .banner2 .img img{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width:450px){
+    .banner2 .img img{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .banner2 .banner2-content h1{
+        font-size: 30px;
+    }
+    .banner2 .banner2-content h1 span{
+        font-size: 30px;
+    }
+}
+
+/* banner2 */
+
+
+/* about us */
+#about{
+    margin-top: 100px;
+}
+#about h2{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#about p{
+    font-weight: bold;
+}
+/* about us */
+/* contact */
+#contact{
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#contact input{
+    background-color: rgba(161,109,14,1);
+}
+#contact input::placeholder{
+    color: white;
+}
+#contact textarea{
+    background-color: rgba(161,109,14,1);
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: rgba(161,109,14,1);
+}
+/* contact */
+
+/* footer */
+#footer{
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    background: #111111;
+  }
+  #footer .footer-top{
+    padding: 60px 0 30px;
+    background: #1b1b1b;
+    color: #fff;
+  }
+  #footer .footer-top .footer-contact a{
+    font-size: 20px;
+    color: #f0cf15;
+    font-weight: bold;
+  }
+  #footer .footer-top .footer-contact a img{
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  #footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #b7b7b7; 
+  }
+  #footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  #footer .footer-top .footer-links{
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #footer .footer-top .footer-links ul li{
+    padding-right: 2px;
+    color: #f0cf15;
+    font-size: 18px;
+    line-height: 1;
+  }
+  #footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  #footer .footer-top .footer-links ul li:first-child{
+    padding-top: 0;
+  }
+  #footer .footer-top .footer-links ul li a{
+    color: #aaaaaa;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  #footer .footer-top .footer-links ul a:hover{
+    text-decoration: none;
+    color: #f0cf15;
+  }
+  #footer .footer-top .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #373737;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .footer-top .social-links a:hover{
+    background: #f0cf15;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright{
+    text-align: center;
+    float: left;
+  }
+  #footer .credits{
+    float: right;
+    text-align: center;
+  }
+  /* footer */
+  /* footer content */
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  .arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+  }
